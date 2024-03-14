@@ -44,14 +44,14 @@ void printarray_up_down(int arr[3][3])
         {
             for (int j = 0; j < 3; j++)
             {
-                cout << arr[j][i] << ' ';
+                cout << arr[i][j] << ' ';
             }
         }
         else // For odd rows (1), print in reverse order
         {
             for (int j = 2; j >= 0; j--)
             {
-                cout << arr[j][i] << ' ';
+                cout << arr[i][j] << ' ';
             }
         }
         cout << endl;
