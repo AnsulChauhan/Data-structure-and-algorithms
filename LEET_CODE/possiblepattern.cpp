@@ -18,13 +18,6 @@ void combinationSumHelper(vector<int>& candidates, int target, int index, vector
     combinationSumHelper(candidates, target, index + 1, current, result);
 }
 
-vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-    vector<vector<int>> result;
-    vector<int> current;
-    combinationSumHelper(candidates, target, 0, current, result);
-    return result;
-}
-
 int main() {
     vector<int> candidates {2, 3, 6, 7};
     int target = 7;
@@ -41,4 +34,11 @@ int main() {
     }
 
     return 0;
+}
+
+vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+    vector<vector<int>> result;
+    vector<int> current;
+    combinationSumHelper(candidates, target, 0, current, result);
+    return result;
 }
