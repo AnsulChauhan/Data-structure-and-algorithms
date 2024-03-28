@@ -28,9 +28,9 @@ int main() {
         for (int i = 0; i < combination.size(); ++i) {
             cout << combination[i];
             if (i != combination.size() - 1)
-                cout << ", ";
+                cout << ",     ede  ";
         }
-        cout << "]" << endl;
+        cout << "]fdef" << endl;
     }
 
     return 0;

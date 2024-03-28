@@ -2,16 +2,16 @@
 using namespace std;
 
 int noOFprime(int n){
-int sum=0;
-
+int         s=0;
+ 
      for(int i=2;i<n;i++){
         if(n%i==0){
             
-            sum++;
+            s++;
         }
     }
     
-cout<<sum;
+cout<<s;
 }
 
 
