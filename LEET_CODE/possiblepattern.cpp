@@ -2,21 +2,6 @@
 #include <vector>
 using namespace std;
 
-void combinationSumHelper(vector<int>& candidates, int target, int index, vector<int>& current, vector<vector<int>>& result) {
-    if (target == 0) {
-        result.push_back(current);
-        return;
-    }
-
-    if (target < 0 || index == candidates.size())
-        return;
-
-    current.push_back(candidates[index]);
-    combinationSumHelper(candidates, target - candidates[index], index, current, result);
-    current.pop_back();
-
-    combinationSumHelper(candidates, target, index + 1, current, result);
-}
 
 int main() {
     vector<int> candidates {2, 3, 6, 7};
@@ -30,7 +15,7 @@ int main() {
             if (i != combination.size() - 1)
                 cout << ",     ede  ";
         }
-        cout << "]fdef" << endl;
+        cout << "]" << endl;
     }
 
     return 0;
