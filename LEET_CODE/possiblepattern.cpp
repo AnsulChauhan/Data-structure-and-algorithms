@@ -21,9 +21,5 @@ int main() {
     return 0;
 }
 
-vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-    vector<vector<int>> result;
-    vector<int> current;
-    combinationSumHelper(candidates, target, 0, current, result);
-    return result;
-}
+
+
