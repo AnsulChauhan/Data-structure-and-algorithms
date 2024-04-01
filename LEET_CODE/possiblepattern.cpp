@@ -17,12 +17,7 @@ int main() {
         }
         cout << "]" << endl;
     }
-    void fun(){
-
-
-
-        cout<<"";
-    }
+   
     return 0;
 }
 
