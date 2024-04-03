@@ -59,29 +59,7 @@ bool factor(char **input) {
         return false;
 }
 
-bool factor(char **input) {
-    if (isdigit(**input)) {
-        (*input)++;
-        return true;
-    }
-    else if (**input == '(') {
-        (*input)++;
-        if (!expr(input))
-            return false;
-        if (**input == ')') {
-            (*input)++;
-            return true;
-        }
-        else
-            return false;
-    }
-    else if (**input == 'i') {
-        (*input)++;
-        return true;
-    }
-    else
-        return false;
-}
+
 int main() {
     char input[100];
     printf("Enter an arithmetic expression: ");
