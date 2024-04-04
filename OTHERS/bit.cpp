@@ -21,5 +21,5 @@ int main( ){
             
     }
     cout<<"Answer is :"<<ans<<endl;
-    
+    cout<<"Answer is :"<<ans<<endl;
 }
