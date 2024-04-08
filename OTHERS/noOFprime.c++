@@ -17,7 +17,7 @@ cout<<s;
 
 int main(){
 
-    int n ;
+    int n,s ;
     cin>>n;
     noOFprime(n);
 
