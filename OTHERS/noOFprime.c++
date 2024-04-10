@@ -105,7 +105,6 @@ void buildItems() {
             Item new_item = {item.lhs, next_symbol + "." + after_dot, 0, item.lookahead};
             auto it = find_if(canonicalCollection.begin(), canonicalCollection.end(), 
                 [&](const Item& existing_item) {
-                    return existing_item.lhs == new_item.lhs &&
                            existing_item.rhs == new_item.rhs &&
                            existing_item.dot == new_item.dot &&
                            existing_item.lookahead == new_item.lookahead;
