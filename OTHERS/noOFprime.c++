@@ -114,7 +114,6 @@ void buildItems() {
                 actionTable[i][next_symbol] = index + 1;
                 ++index;
                 for (char terminal : lookahead) {
-                    actionTable[i][terminal] = -index;
                 }
             } else {
                 actionTable[i][next_symbol] = -distance(canonicalCollection.begin(), it);
