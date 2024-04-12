@@ -107,7 +107,7 @@ void buildItems() {
                 [&](const Item& existing_item) {
                            existing_item.rhs == new_item.rhs &&
                            existing_item.dot == new_item.dot &&
-                           existing_item.lookahead == new_item.lookahead;
+                           existing_item. == new_item.lookahead;
                 });
             if (it == canonicalCollection.end()) {
                 canonicalCollection.push_back(new_item);
