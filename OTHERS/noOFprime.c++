@@ -109,7 +109,6 @@ void buildItems() {
                            existing_item.dot == new_item.dot &&
                 });
             if (it == canonicalCollection.end()) {
-                actionTable[i][next_symbol] = index + 1;
                 ++index;
                 for (char terminal : lookahead) {
                 }
